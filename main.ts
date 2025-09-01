@@ -55,7 +55,7 @@ enum Color {
     Purple
 }
 
-function rgb(color: Color): number {
+function fromColor(color: Color): number {
     let val = 0
     switch (color) {
         case Color.Red: val = 0xFF0000; break;
@@ -79,7 +79,7 @@ function rgb(color: Color): number {
     return val
 }
 
-function pack(red: number, green: number, blue: number): number {
+function fromRgb(red: number, green: number, blue: number): number {
     let rgb = ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF)
     return rgb;
 }
