@@ -55,7 +55,7 @@ enum Color {
     Purple
 }
 
-namespace Color {
+namespace RGB {
 
     function fromColor(color: Color): number {
         let val = 0
